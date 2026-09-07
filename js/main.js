@@ -175,7 +175,7 @@ function initPrintButtons() {
 function initScrollAnimations() {
   if (!('IntersectionObserver' in window)) return;
 
-  const elementsToAnimate = document.querySelectorAll('.edu-entry, .exp-card, .project-item, .skills-group, .trait-box');
+  const elementsToAnimate = document.querySelectorAll('.edu-entry, .exp-card, .project-item, .skills-group, .trait-box, .contact-card');
   if (!elementsToAnimate.length) return;
 
   const observer = new IntersectionObserver((entries) => {
