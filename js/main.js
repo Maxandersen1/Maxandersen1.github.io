@@ -20,10 +20,9 @@ function initTheme() {
   const themeToggle = document.getElementById('theme-toggle');
   const html = document.documentElement;
 
-  // Hämta sparat tema eller systeminställning
+  // Ljust läge är alltid standard för alla besökare om man inte aktivt växlat
   const savedTheme = localStorage.getItem('theme');
-  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+  const initialTheme = savedTheme === 'dark' ? 'dark' : 'light';
 
   html.setAttribute('data-theme', initialTheme);
 
@@ -38,14 +37,6 @@ function initTheme() {
       showToast(`Bytte till ${newTheme === 'dark' ? 'mörkt' : 'ljust'} läge`);
     });
   }
-
-  // Lyssna på ändringar i operativsystemets temainställning
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-    if (!localStorage.getItem('theme')) {
-      const newTheme = e.matches ? 'dark' : 'light';
-      html.setAttribute('data-theme', newTheme);
-    }
-  });
 }
 
 /**
