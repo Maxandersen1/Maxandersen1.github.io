@@ -6,7 +6,7 @@
   <title>Max Andersen Frisk — Civilingenjörsstudent Elektroteknik, Chalmers</title>
   <meta name="description" content="Personlig webbplats och CV för Max Andersen Frisk. Civilingenjörsstudent i Elektroteknik vid Chalmers Tekniska Högskola i Göteborg.">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="css/style.css?v=2.2">
+  <link rel="stylesheet" href="css/style.css?v=2.3">
 </head>
 <body>
   <!-- Tillgänglighetslänk för tangentbordsanvändare -->
@@ -396,13 +396,13 @@
         <div class="projects-list">
           <!-- Projekt 1: ESP32-S3 Flight Controller -->
           <article class="project-item">
-            <span class="project-category">Inbyggda system & PCB</span>
+            <span class="project-category">Inbyggda system & PCB &middot; Pågående</span>
             <h3 class="project-item-title">ESP32-S3 Flight Controller (Drönare)</h3>
             <p class="project-item-desc">
-              Egendesignad drönarstyrning byggd från grunden kring mikrokontrollern ESP32-S3. Projektet omfattar 
-              schema och mönsterkortslayout i KiCad, ytmontering (SMD), lågnivådrivrutiner i C++ över SPI och I2C för 
-              Bosch BMI088 (6-axlig IMU) och BMP388 (barometer), samt ett komplementärt filter (sensor fusion) 
-              för stabil pitch/roll-vinkelberäkning och höjddata.
+              Ett pågående projekt där jag utvecklar en egen drönarstyrning från grunden kring mikrokontrollern ESP32-S3. 
+              Hårdvaran har jag konstruerat själv med schema och PCB-layout i KiCad samt manuell SMD-lödning. 
+              I dagsläget är i stort sett all firmware och C++-programmering (lågnivådrivrutiner för BMI088/BMP388 över SPI/I2C samt komplementärt filter för vinkelberäkning) 
+              genererad och itererad med hjälp av autonoma AI-agenter utifrån min tekniska kravställning och arkitektur.
             </p>
             <div class="project-links">
               <a href="https://github.com/Maxandersen1/ESP32-S3-Flight_Controller" target="_blank" rel="noopener noreferrer" class="project-github-link">
@@ -414,13 +414,15 @@
               </a>
             </div>
             <div class="project-tools">
+              <span>Pågående</span>
               <span>ESP32-S3</span>
               <span>KiCad</span>
-              <span>C++</span>
+              <span>SMD-lödning</span>
+              <span>AI-genererad firmware</span>
+              <span>C++ (Arduino)</span>
               <span>SPI & I2C</span>
               <span>Bosch BMI088</span>
               <span>Sensor Fusion</span>
-              <span>SMD-lödning</span>
             </div>
           </article>
 
