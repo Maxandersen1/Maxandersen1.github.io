@@ -841,6 +841,27 @@ a:hover {
   flex-grow: 1;
 }
 
+.project-links {
+  margin-top: auto;
+  margin-bottom: 14px;
+}
+
+.project-github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  transition: color var(--transition-smooth);
+}
+
+.project-github-link:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
 .project-tools {
   display: flex;
   flex-wrap: wrap;

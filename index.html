@@ -6,7 +6,7 @@
   <title>Max Andersen Frisk — Civilingenjörsstudent Elektroteknik, Chalmers</title>
   <meta name="description" content="Personlig webbplats och CV för Max Andersen Frisk. Civilingenjörsstudent i Elektroteknik vid Chalmers Tekniska Högskola i Göteborg.">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="css/style.css?v=2.1">
+  <link rel="stylesheet" href="css/style.css?v=2.2">
 </head>
 <body>
   <!-- Tillgänglighetslänk för tangentbordsanvändare -->
@@ -394,7 +394,37 @@
         </div>
 
         <div class="projects-list">
-          <!-- Projekt 1: PCB Design -->
+          <!-- Projekt 1: ESP32-S3 Flight Controller -->
+          <article class="project-item">
+            <span class="project-category">Inbyggda system & PCB</span>
+            <h3 class="project-item-title">ESP32-S3 Flight Controller (Drönare)</h3>
+            <p class="project-item-desc">
+              Egendesignad drönarstyrning byggd från grunden kring mikrokontrollern ESP32-S3. Projektet omfattar 
+              schema och mönsterkortslayout i KiCad, ytmontering (SMD), lågnivådrivrutiner i C++ över SPI och I2C för 
+              Bosch BMI088 (6-axlig IMU) och BMP388 (barometer), samt ett komplementärt filter (sensor fusion) 
+              för stabil pitch/roll-vinkelberäkning och höjddata.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Maxandersen1/ESP32-S3-Flight_Controller" target="_blank" rel="noopener noreferrer" class="project-github-link">
+                <svg viewBox="0 0 24 24" width="15" height="15" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                <span>Visa projektet på GitHub</span>
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+            <div class="project-tools">
+              <span>ESP32-S3</span>
+              <span>KiCad</span>
+              <span>C++</span>
+              <span>SPI & I2C</span>
+              <span>Bosch BMI088</span>
+              <span>Sensor Fusion</span>
+              <span>SMD-lödning</span>
+            </div>
+          </article>
+
+          <!-- Projekt 2: PCB Design -->
           <article class="project-item">
             <span class="project-category">Kretsdesign & PCB</span>
             <h3 class="project-item-title">Egendesignat Kretskort (Blinkande LED)</h3>
@@ -412,7 +442,7 @@
             </div>
           </article>
 
-          <!-- Projekt 2 -->
+          <!-- Projekt 3 -->
           <article class="project-item">
             <span class="project-category">Elektronik</span>
             <h3 class="project-item-title">Experiment med Arduino & ESP32</h3>
@@ -428,7 +458,7 @@
             </div>
           </article>
 
-          <!-- Projekt 2 -->
+          <!-- Projekt 4 -->
           <article class="project-item">
             <span class="project-category">CAD & Mekanik</span>
             <h3 class="project-item-title">Modellering & 3D-printing</h3>
@@ -443,7 +473,7 @@
             </div>
           </article>
 
-          <!-- Projekt 3 -->
+          <!-- Projekt 5 -->
           <article class="project-item">
             <span class="project-category">Programmering</span>
             <h3 class="project-item-title">Beräkningsskript i Python</h3>
@@ -458,7 +488,7 @@
             </div>
           </article>
 
-          <!-- Projekt 4 -->
+          <!-- Projekt 6 -->
           <article class="project-item">
             <span class="project-category">DevOps & AI</span>
             <h3 class="project-item-title">Portföljhemsida & AI-parprogrammering</h3>
@@ -467,6 +497,15 @@
               Fokus på kravställning, iterativ kodgranskning, versionshantering med Git samt modern molninfrastruktur 
               med egen domän via Cloudflare DNS och automatiserad GitHub Pages-driftsättning.
             </p>
+            <div class="project-links">
+              <a href="https://github.com/Maxandersen1/Maxandersen1.github.io" target="_blank" rel="noopener noreferrer" class="project-github-link">
+                <svg viewBox="0 0 24 24" width="15" height="15" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                <span>Visa projektet på GitHub</span>
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
             <div class="project-tools">
               <span>AI-parprogrammering</span>
               <span>Git & GitHub</span>
