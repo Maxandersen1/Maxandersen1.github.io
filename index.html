@@ -6,7 +6,7 @@
   <title>Max Andersen Frisk — Civilingenjörsstudent Elektroteknik, Chalmers</title>
   <meta name="description" content="Personlig webbplats och CV för Max Andersen Frisk. Civilingenjörsstudent i Elektroteknik vid Chalmers Tekniska Högskola i Göteborg.">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="css/style.css?v=2.4">
+  <link rel="stylesheet" href="css/style.css?v=2.5">
 </head>
 <body>
   <!-- Tillgänglighetslänk för tangentbordsanvändare -->
@@ -399,11 +399,8 @@
             <span class="project-category">IoT & Inbyggda system</span>
             <h3 class="project-item-title">ESP32 E-Paper Avgångstavla (Västtrafik & Väder)</h3>
             <p class="project-item-desc">
-              En strömsnål avgångs- och vädermonitor inbyggd i en tavelram med ett 3D-printat chassi. 
-              Drivs av en ESP32-C3 Supermini och en 4,2-tums E-Paper-skärm från Waveshare. 
-              Hämtar realtidsavgångar för spårvagn och buss via Västtrafik API v4 samt lokala väderprognoser från Open-Meteo. 
-              Optimerad för lång batteritid med timerstyrt deep sleep (~30–50 µA), blixtsnabb WiFi-återanslutning 
-              (&lt;0,8 s) via RTC-minne samt automatiskt nattläge för flera månaders drift på uppladdningsbart litiumbatteri.
+              Strömsnål avgångstavla och vädermonitor med ESP32-C3 och 4,2" Waveshare E-Paper i 3D-printat tavelchassi. 
+              Hämtar realtidsdata via Västtrafik API v4 och Open-Meteo, optimerad med deep sleep för flera månaders batteritid.
             </p>
             <div class="project-links">
               <a href="https://github.com/Maxandersen1/ESP32-Vasttrafik-Epaper" target="_blank" rel="noopener noreferrer" class="project-github-link">
@@ -416,13 +413,11 @@
             </div>
             <div class="project-tools">
               <span>ESP32-C3</span>
-              <span>E-Paper (Waveshare)</span>
-              <span>Västtrafik API v4</span>
-              <span>Open-Meteo API</span>
+              <span>Waveshare E-Paper</span>
+              <span>Västtrafik API</span>
+              <span>Open-Meteo</span>
               <span>Deep Sleep</span>
               <span>3D-printing</span>
-              <span>Li-ion batteri</span>
-              <span>C++ (Arduino)</span>
             </div>
           </article>
 
@@ -431,10 +426,8 @@
             <span class="project-category">Inbyggda system & PCB &middot; Pågående</span>
             <h3 class="project-item-title">ESP32-S3 Flight Controller (Drönare)</h3>
             <p class="project-item-desc">
-              Ett pågående projekt där jag utvecklar en egen drönarstyrning från grunden kring mikrokontrollern ESP32-S3. 
-              Hårdvaran har jag konstruerat själv med schema och PCB-layout i KiCad samt manuell SMD-lödning. 
-              I dagsläget är i stort sett all firmware och C++-programmering (lågnivådrivrutiner för BMI088/BMP388 över SPI/I2C samt komplementärt filter för vinkelberäkning) 
-              genererad och itererad med hjälp av autonoma AI-agenter utifrån min tekniska kravställning och arkitektur.
+              Eget drönarstyrkort kring ESP32-S3 med schema, PCB-layout i KiCad och SMD-lödning. 
+              Lågnivådrivrutiner (SPI/I2C) för BMI088 och BMP388 samt sensor fusion är i nuläget framtagna med AI-agenter utifrån min arkitektur.
             </p>
             <div class="project-links">
               <a href="https://github.com/Maxandersen1/ESP32-S3-Flight_Controller" target="_blank" rel="noopener noreferrer" class="project-github-link">
@@ -450,11 +443,9 @@
               <span>ESP32-S3</span>
               <span>KiCad</span>
               <span>SMD-lödning</span>
-              <span>AI-genererad firmware</span>
-              <span>C++ (Arduino)</span>
-              <span>SPI & I2C</span>
               <span>Bosch BMI088</span>
               <span>Sensor Fusion</span>
+              <span>AI-firmware</span>
             </div>
           </article>
 
